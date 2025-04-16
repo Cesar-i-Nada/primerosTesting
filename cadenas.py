@@ -1,9 +1,11 @@
 def es_palindromo(palabra):
-    return palabra == palabra[::-1]
+    palabra_al_reves = palabra[::-1]
+    return palabra == palabra_al_reves
 
-def contar_vocales(texto):
+def contar_vocales(palabra):
     contador = 0
-    for letra in texto:
-        if letra() in "aeiouAEIOU":
+    for letra in palabra:
+        if letra in "aeiouAEIOU":
             contador += 1
     return contador
+
