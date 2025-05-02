@@ -4,8 +4,9 @@ def es_palindromo(palabra):
 
 def contar_vocales(palabra):
     contador = 0
+    palabra = "aeiouAEIOU"
     for letra in palabra:
-        if letra in "aeiouAEIOU":
+        if letra in palabra:
             contador += 1
     return contador
 
